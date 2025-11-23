@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Market Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Crypto Market Tracker</h1>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search by name or symbol...">
+        <button id="searchBtn">Search</button>
+        <button id="sortMcap">Sort by Market Cap</button>
+        <button id="sortChange">Sort by % Change</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Price ($)</th>
+                <th>Total Volume</th>
+                <th>% Change (24h)</th>
+            </tr>
+        </thead>
+        <tbody id="cryptoTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
